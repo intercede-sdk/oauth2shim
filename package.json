@@ -1,0 +1,15 @@
+{
+  "name": "oauth2shim",
+  "version": "1.0.0",
+  "description": "Implements oauth2 rfc6749 client_credential grant request, calling an external custom websevice to obtain the token. This is used for making non oauth2 authorization endpoints work from clients that support oauth2 client_credential grant",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Intercede",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "win-ca": "^3.5.0"
+  }
+}
