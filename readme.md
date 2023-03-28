@@ -1,5 +1,5 @@
 # oauth2 client_credential grant converter sample
-This will take an https://www.ietf.org/rfc/rfc6749.txt oauth2 client_credential grant input (with client_id and client_secet, either in basic auth header or body) and call a custom webservice endpoint that uses the client_id and client_secet (but does not conform to rfc6749 oauth2) to obtain an auth token.
+This will take an https://www.ietf.org/rfc/rfc6749.txt oauth2 client_credential grant input (with client_id and client_secet, either in basic auth header or body) and call a custom webservice endpoint that uses the client_id and client_secret (but does not conform to rfc6749 oauth2) to obtain an auth token.
 The auth token is then extracted from the custom webservice endpoint and an oauth2 rfc6749 oauth2 client_credential response is returned.
 This is useful as a shim conversion layer for cases where a client (such as MyID notifications) supports oauth2 client_credentials grant for authorization, but a webservice has its own custom authorization endpoint for obtaining auth tokens.
 
